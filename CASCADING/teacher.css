@@ -1,0 +1,36 @@
+#firstcol{
+    padding-top: 20px;
+}
+#sacimg{
+    padding-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 350px;
+}
+#firstrow{
+    padding-bottom: 100px;
+}
+#label{
+    margin: 5px 0 5px 5px;
+}
+#studentsub{
+    margin-top: 15px;
+    background-color: blue;
+    color: whitesmoke;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#user,#psd{
+    border-radius: 5px;
+    width: 345px;
+}
+#but{
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    color: whitesmoke;
+    border-radius: 5px;
+
+}

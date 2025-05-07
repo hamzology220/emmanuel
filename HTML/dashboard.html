@@ -1,0 +1,449 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="../CASCADING/dashboard.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="../css/bootstrap-icons.min.css"><title>dashboard</title>
+</head>
+<body>
+   
+    <!-------------NAVBAR CONTENT STARTS HERE-------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light shadow p-1 mb-5 rounded">
+        <div class="container">
+          <div class="navbar-brand">
+            <img src="../Images/sacimage.jpg" alt="sacimage" width="35" height="35"><span class="text-primary">St. Augustine's College Exam System</span>
+          </div>
+    <!----------------toggle navbar for mobile device starts here------------------>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle-navigation"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <!----------------------------NAVBAR LINKS FALLS HERE------------------------------>
+          <div class="collapse navbar-collapse align-center ms-5" id="main-nav">
+            <!--------the Ms-auto took the nav bar to the right-->
+            <ul class="navbar-nav Ms-auto">
+              <li class="nav-item">
+                <a class="nav-link mx-2 fw-bold" href="index.html"
+                  >Home</a
+                >
+              </li>
+              
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 fw-bold" href="#">
+                   Chat</a>
+              
+          </div>
+          
+        </div>
+      </nav>
+    <!-- the jumbotron which is the second part after the nav bar -->
+  <div class="container bg-light shadow p-3">
+    <h5 style="color: blue;"><i class="uil uil-setting"></i>Dashboard</h5>
+  </div>
+  <!-- <section id="sect1"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2 pt-5">
+                <div class="rounded">
+                    <div onclick="section2()" class="first first1"><i class="uil uil-setting"></i>Dashboard</div>
+                    <div onclick="section1()" class="first first2"><i class="uil uil-house-user"></i>Set text/Exam type</div>
+                    <div onclick="section3()" class="first first3"><i class="uil uil-university"></i>Set Question</div>
+                    <div onclick="section4()" class="first first4"><i class="uil uil-file-upload"></i>Upload Notes</div>
+                    <div class="first first5"><i class="uil uil-eye"></i>View Result</div>
+                    <div onclick="section6()" class="first first6"><i class="uil uil-book"></i>Essay Section</div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10">
+                <div class="row">
+                    <!-- first section starts -->
+                    <div class="col-sm-12 col-md-8 col-lg-9 pt-5" id="sect1">
+                        <div class="p-3 bg-light shadow-sm rounded-top">
+                            <span style="color: #0084FF; font-family: sans-serif;">Set Question</span>
+                        </div>
+
+                        <div class="shadow-sm p-3"><div><hr></div>
+                        Welcome to St. Augustines College Examination Dashboard. 
+                        Please make use of the menu by the side to navigate</div>
+                    </div>
+                    <!-- first section ended -->
+                    <!-- second section starts-->
+                    <div class="container" id="sect2">
+                        <div class="col-sm-12 col-md-8 col-lg-9 pt-5">
+                            <div class="p-3 bg-light shadow-sm rounded-top"><span style="color: #0084FF; font-family: sans-serif;">Set Test</span></div>
+                            <div class="shadow-sm p-3">
+                                <div><hr></div>
+                                <div class="row">
+                                  <!-- sub column 1 starts here -->
+                                  <div class="col-12 col-md-6">
+                                    <span style="color: rgb(0, 128, 0);">
+                                      please hold down shift key to select multiple 
+                                      classes for setting test, assignment or Exams
+                                    </span>
+                                    <select class="form-select" multiple aria-label="Multiple select example">
+                                      <option >option</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <br>
+                                   <div>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                      <option selected> Select Subject</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                   </div>
+                                   <br>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                      <label class="form-check-label" for="checkDefault">
+                                        IsActive
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="checkChecked">
+                                      <label class="form-check-label" for="checkChecked">
+                                        Shuffle Question
+                                      </label>
+                                   </div>
+                                   <br>
+                                   <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Duration in minutes</label>
+                                    <input type="minutes" class="form-control" id="exampleFormControlInput1" placeholder="0">
+                                  </div>
+                                  <div>
+                                    <label for="exampleFormControlInput1" class="form-label">Term</label>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                      <option selected> Select Term</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                  <br>
+                                  <div>
+                                    <label for="exampleFormControlInput1" class="form-label">Exam/Test Type</label>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                      <option selected> Select Exam Type</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                  <br>
+                                  <div>
+                                    <label for="exampleFormControlInput1" class="form-label">School Session</label>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                      <option selected> Select Current Session</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                  <br>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label" for="checkDefault">
+                                      Seperate Essay
+                                    </label>
+                                  </div>
+                                  </div>
+                                  <!--  sub column 1 ends here -->
+
+                                  <!-- sub column 2 starts here -->
+                                  <div class="col-12 col-md-6">
+                                    <!-- form start here -->
+                                    <div class="form-floating mb-3">
+                                      <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                      <label for="floatingInput">Exam/Test Date</label>
+                                    </div>
+                                    <div class="form-floating">
+                                      <input type="time" class="form-control" id="floatingPassword" placeholder="Password">
+                                      <label for="floatingPassword">Exam/Test becomes Visible at what time</label>
+                                    </div>
+                                    <div class="form-floating">
+                                      <input type="time" class="form-control" id="floatingPassword" placeholder="Password">
+                                      <label for="floatingPassword">Exam/Test becomes Invisible at what time</label>
+                                    </div>
+                                    <div>
+                                      <label for="floatingTextarea2">Set Exam/Test Instruction</label>
+                                      <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 70px"></textarea>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <!-- form end here -->
+                                  </div>
+                                  <!-- sub column 2 ends here -->
+                                </div>
+                      
+                                
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <!-- second section ended -->
+                    
+                    <!-- third section starts-->
+                    <div class="container" id="sect3">
+                      <div class="col-sm-12 col-md-8 col-lg-9 pt-5">
+                          <div class="p-3 bg-light shadow-sm rounded-top">Set Question</div>
+                          <div class="shadow-sm p-3">
+                              <div><hr></div>
+
+                              <div class="row">
+                                <!-- Set Question sub column 1 starts here -->
+                                <div class="col-12 col-md-6">
+                                  <span style="color: rgb(0, 128, 0);">
+                                    please hold down shift key to select multiple 
+                                    classes for setting test, assignment or Exams
+                                  </span>
+                                  <select class="form-select" multiple aria-label="Multiple select example">
+                                    <option >option</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                  <br>
+                                 <div>
+                                  <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <option selected> Select Subject</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                 </div>
+                                 <br>
+                                 
+                                <div>
+                                  <label for="exampleFormControlInput1" class="form-label">Term</label>
+                                  <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <option selected> Select Term</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                                <br>
+                                <div>
+                                  <label for="exampleFormControlInput1" class="form-label">Exam/Test Type</label>
+                                  <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <option selected> Select Exam Type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                                <br>
+                                <div>
+                                  <label for="exampleFormControlInput1" class="form-label">School Session</label>
+                                  <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <option selected> Select Current Session</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                                
+                               
+                                </div>
+                                <!-- Set Question sub column 1 ends here -->
+
+                                <!-- Set Question sub column 2 starts here -->
+                                <div class="col-12 col-md-6">
+                                
+                                </div>
+                                <!-- Set Question sub column 2 ends here -->
+                              </div>
+                    
+                              
+                          </div>
+                      </div>
+                   
+                  </div>
+
+                    <!-- third section ended -->
+
+                    <!-- fourth section starts-->
+                    <div class="container" id="sect4">
+                      <div class="col-sm-12 col-md-8 col-lg-9 pt-5">
+                          <div class="p-3 bg-light shadow-sm rounded-top">Upload Note</div>
+                          <div class="shadow-sm p-3">
+                              <div><hr></div>
+                              <div class="row">
+                                <!-- Upload sub column 1 starts here -->
+                                <div class="col-12 col-md-6">
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Title</label>
+                                  </div>
+                                 <div>
+                                  <label for="exampleFormControlInput1" class="form-label">Class</label>
+                                  <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <option selected> Select Class</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                 </div>
+                                 <br>
+                                 
+                                <div>
+                                  <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                                  <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <option selected> Select Subject</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                                <br>
+                                <div class="mb-3">
+                                  <label for="formFileSm" class="form-label">File Path</label>
+                                  <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                </div>
+                                
+                                <div class="mb-3">
+                                  <label for="formFileSm" class="form-label">Upload Image if any</label>
+                                  <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+
+                                </div>
+                                <!-- Upload Note sub column 1 ends here -->
+
+                                <!--Upload Note sub column 2 starts here -->
+                                <div class="col-12 col-md-6">
+                                
+                                </div>
+                                <!-- Upload Note sub column 2 ends here -->
+                              </div>
+                    
+                              
+                          </div>
+                      </div>
+                   
+                  </div>
+                          
+                  <!-- fourth section ended -->
+
+                  <!-- fifth section starts-->
+                  <div class="container" id="sect5">
+                    <div class="col-sm-12 col-md-8 col-lg-9 pt-5">
+                        <div class="p-3 bg-light shadow-sm rounded-top"></div>
+                        <div class="shadow-sm p-3">
+                            <div><hr></div>
+                            Welcome here
+                        </div>
+                    </div>
+                 
+                </div>
+                <!-- fifth section ended -->
+
+                <!-- sixth section starts-->
+                <div class="container" id="sect6">
+                  <div class="col-sm-12 col-md-8 col-lg-9 pt-5">
+                      <div class="p-3 bg-light shadow-sm rounded-top">Essay</div>
+                      <div class="shadow-sm p-3">
+                          <div><hr></div>
+                          <h5 style="color: blue;">Filter Essay By Class</h5>
+      <hr>
+    
+          <form action="" >
+          <div class="row" id="firstrow">
+          <div class=" col-sm-12 col-md-4 bg-body" id="form-form">
+            
+            <label for="class" id="label">Your Class</label>
+          <select class="form-select" aria-label="Default select example" name="home" id="class">
+                <option selected> select Class</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+      </div>
+           <div class=" col-sm-12 col-md-4 bg-body" id="form-form">
+                <label for="class" id="label">Your Class</label>
+                <select class="form-select" aria-label="Default select example" name="home" id="class">
+                  <option selected> select Class</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+        </div>
+           <div class=" col-sm-12 col-md-4 bg-body" id="form-form">
+
+                <label for="class" id="label">Your Class</label>
+                <select class="form-select" aria-label="Default select example" name="home" id="class">
+                  <option selected> select Class</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div class="row" id="secondrow">
+            
+              <hr id="line">
+                <div class=" col-sm-12 col-md-4 bg-body" id="form-form">
+                <label for="class" id="label">Your Class</label>
+                <select class="form-select" aria-label="Default select example" name="home" id="class">
+                  <option selected> select Class</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+                <div class=" col-sm-12 col-md-4 bg-body" id="form-form">
+
+                <label for="class" id="label">Your Class</label>
+                <select class="form-select" aria-label="Default select example" name="home" id="class">
+                  <option selected> select Class</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+                
+          </div>
+              <br>
+            <div>
+              <button id="sub">Search</button>
+            </div>
+              <!-- <input type="submit" id="studentsub" onclick="indexpage()"> -->
+            </div>
+            </form>
+        </div>
+                      </div>
+                  </div>
+               
+              </div>
+              <!-- sixth section ended -->
+
+               
+</div>
+<!-- </section> -->
+
+
+<!-- <section id="sect2"> -->
+
+<!-- </section> -->
+
+<script src="../JSCRIPT/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+#firstcol{
+    padding-top: 20px;
+}
+
+#firstrow{
+    padding-bottom: 200px;
+}
+#label{
+    margin: 5px 0 5px 5px;
+}
+#line{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+#adm{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 150px;
+}
+#sub{
+    margin-top: 20px;
+    background-color: rgb(81, 81, 245);
+    color: whitesmoke;
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+  
+}

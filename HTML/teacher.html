@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="../CASCADING/teacher.css">
+<script src="https://kit.fontawesome.com/fd3672072c.js" crossorigin="anonymous"></script>
+    <title>Home Page</title>
+</head>
+<body>
+   
+    <!-------------NAVBAR CONTENT STARTS HERE-------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light shadow p-1 mb-5 rounded">
+        <div class="container">
+          <div class="navbar-brand">
+            <img src="../Images/sacimage.jpg" alt="sacimage" width="35" height="35"><br><span class="text-primary">St. Augustine's College Exam System</span>
+          </div>
+          <!----------------toggle navbar for mobile device starts here------------------>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle-navigation"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <!----------------------------NAVBAR LINKS FALLS HERE------------------------------>
+          <div class="collapse navbar-collapse align-center ms-5" id="main-nav">
+            <!--------the Ms-auto took the nav bar to the right-->
+            <ul class="navbar-nav ms-center">
+              <li class="nav-item">
+                <a class="nav-link mx-2 fw-bold" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 fw-bold" href="#"
+                  >Entrance Exam</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 fw-bold" href="#">
+                   Chat</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-2 fw-bold"
+                  href="#"
+                  >Note</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 fw-bold" href="essaysection.html"
+                  >Essay</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 fw-bold" href="#">View Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 fw-bold" href="teacher.html">Login</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    <!-- the jumbotron which is the second part after the nav bar -->
+  <div class="container bg-light text-black shadow p-3 w-75" id="width">
+    <h5 style="color: blue;">Access Your Account</h5>
+  </div>
+  <div class="container text-black shadow mb-5 w-75" id="width2">
+      <div class="row" id="firstrow">
+        <div class="col-md-12 col-lg-6 bg-body" id="firstcol">
+          <form action="" id="teach-log">
+            <h3 style="text-align: center;">Login</h3>
+
+            <label for="user" id="label">Username</label><br>
+              <input type="text" name="user" id="user" value="" ><br>
+              <span id="username-error" style="display: none;">Username is required</span>
+
+              <label for="psd" id="label">Password</label><br>
+              <span id="password-error" style="display: none;"> password is required</span>
+              <input type="text" name="password" id="psd" value="" ><br> <br>
+              <input type="checkbox">Rememeber Me <br> <br>
+            <button type="Submit" id="but">Login</button> <br>
+           <span id="submit-error" style="display: none;">please fix error</span>
+            <p>
+               <a href="#" style="color: blue;">Forgot Password?</a> 
+            </p>
+              
+          </form>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <img src="../Images/homeimage.jpg" alt="exam piks" id="sacimg">
+        </div>
+      </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="../JSCRIPT/teacher.js"></script>
+
+</body>
+</html>
