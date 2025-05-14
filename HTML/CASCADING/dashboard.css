@@ -67,3 +67,12 @@
 .bg-light{
     background-color: rgb(230, 235, 234) !important;
 }
+#sub{
+    margin-top: 15px;
+    background-color: rgb(81, 81, 245);
+    color: whitesmoke;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    font-weight: bold; 
+}
